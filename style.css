@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: sans-serif;
+    background-image: linear-gradient(to left ,rgba(0,0,0,0.9),rgba(0,0,0,0.4)),url("./icons/back.jpg") ;
+    background-size: cover;
+}
+.heading{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+.entry{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.input{
+    padding: 0.65rem;
+    height: 4rem;
+    width: 50rem;
+    outline: none;
+    border: none;
+    margin: 2rem 0;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
+}
+.entry-btn{
+    background-color: #FF8E30;
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border: none;
+    transition: all .2s;
+}
+.entry-btn:hover .add-img:hover{background-color: #FF7D11;}
+.entry-btn:focus{outline: none;}
+.add-img{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    height: 2rem;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.todo{
+    display: flex;
+    height: 4rem;
+    width: 50rem;
+    background-color: white;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    align-content: space-between;
+    justify-content: center;
+    transition: all .5s ease;
+}
+.todo-list{
+    flex: 1;
+    list-style: none;
+    font-size: 2rem;
+    align-self: start;
+}
+.todo-check, .todo-cross{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 1.5rem;
+    width: 1.5rem;
+    filter: invert(96%);
+}
+.todo-check-btn ,.todo-cross-btn{
+    position: relative;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
+    background-color: #2CC269;
+    margin-left: .5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.todo-check-btn:focus {
+    outline: none;
+}
+.todo-check-btn:hover {
+    background-color: #48A66E;
+}
+.todo-cross-btn{
+    background-color: #FE5D33;
+}
+.todo-cross-btn:focus {
+    outline: none;
+}
+.todo-cross-btn:hover {
+    background-color: #E65A4F;
+}
+.completed{
+    text-decoration: line-through;
+    opacity: 50%;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select{
+    width: 15rem;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    margin-left: 2rem;
+    color: #FF8E30;
+    padding: 1.1rem;
+    box-shadow: 0 2rem 4rem rgba(0,0,0,.3);
+}
+.select{
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    font-size: 1.3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FF8E30;
+    padding: 1.4rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+.select:hover::after{
+    background:#FF7D11 ;
+    color: white;
+}

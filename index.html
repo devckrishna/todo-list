@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo</title>
+</head>
+<body>
+    <h1 class="heading">Your To-do List</h1>
+    <div class="entry">
+        <input type="text" class="input" placeholder="Enter the Todo">
+        <button class="entry-btn">
+            <img src="./icons/add.png" class="add-img"></img>
+        </button>
+
+        <div class="select">
+            <select name="todos" class="filter-option">
+                <option value="all">all</option>
+                <option value="completed">completed</option>
+                <option value="uncompleted">uncompleted</option>
+            </select>
+        </div>
+    </div>
+
+    
+
+    <div >
+        <ul class="items"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
